@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import "./style.css";
 import heroImage from "../assets/images/hero-home.jpg"; // full right image
