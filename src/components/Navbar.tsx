@@ -33,8 +33,8 @@ const Navbar = () => {
           </a>
 
           <a
-            href="/Anshu_Mainali_Resume.pdf"
-            download="Anshu_Mainali_Resume.pdf"
+            href="/Resume.pdf"
+            download="Anshu_Resume.pdf"
             className="resume-link"
           >
             Resume ↓
