@@ -11,7 +11,7 @@ const projects = [
     name: "Twitter Bot Detection",
     description: "A Machine Learning and Django-based web app that detects spam or bot accounts on Twitter using user activity and profile features.",
     code: "https://github.com/Anshu-Mainali-Giri/Twitter-Bot-Detection",
-    demo: "#",
+    demo: "https://twitter-bot-detection-0rmm.onrender.com/bot/",
     image: twitterBotImg,
   },
   {
