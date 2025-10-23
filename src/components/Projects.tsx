@@ -13,6 +13,7 @@ const projects = [
     code: "https://github.com/Anshu-Mainali-Giri/Twitter-Bot-Detection",
     demo: "https://twitter-bot-detection-0rmm.onrender.com/bot/",
     image: twitterBotImg,
+    tech: ["Python", "Django", "ML", "Scikit-learn"]
   },
   {
     name: "Online Store",
@@ -20,6 +21,7 @@ const projects = [
     code: "https://github.com/Anshu-Mainali-Giri/Online-Store",
     demo: "#",
     image: onlineStoreImg,
+    tech: ["HTML", "CSS", "PHP", "MySQL"]
   },
   {
     name: "AgentHire",
@@ -27,56 +29,153 @@ const projects = [
     code: "https://github.com/Anshu-Mainali-Giri/AgentHire",
     demo: "#",
     image: agentHireImg,
+    tech: ["Salesforce", "AgentForce", "Apex", "LWC"]
   },
 ];
 
 const Projects = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1
+      }
+    }
+  };
+
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      y: 50,
+      scale: 0.9
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut"
+      }
+    }
+  };
+
   return (
     <section id="projects" className="projects">
-      <h2>Projects</h2>
-      <div className="projects-grid">
+      <motion.h2
+        initial={{ opacity: 0, y: -30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      >
+        Featured Projects
+      </motion.h2>
+      
+      <motion.div 
+        className="projects-grid"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+      >
         {projects.map((project, index) => (
           <motion.div
             key={index}
             className="project-card"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2 }}
+            variants={cardVariants}
+            whileHover={{ 
+              y: -10,
+              scale: 1.02,
+              transition: { duration: 0.3 }
+            }}
           >
             {/* Project Image */}
-            {project.image && (
-              <img
+            <motion.div className="project-image-container">
+              <motion.img
                 src={project.image}
                 alt={project.name}
                 className="project-image"
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               />
-            )}
+              <motion.div 
+                className="project-overlay"
+                initial={{ opacity: 0 }}
+                whileHover={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                <motion.div className="tech-stack">
+                  {project.tech.map((tech, idx) => (
+                    <motion.span 
+                      key={idx} 
+                      className="tech-tag"
+                      initial={{ scale: 0 }}
+                      animate={{ scale: 1 }}
+                      transition={{ delay: idx * 0.1 }}
+                    >
+                      {tech}
+                    </motion.span>
+                  ))}
+                </motion.div>
+              </motion.div>
+            </motion.div>
 
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <div className="project-buttons">
-              <motion.a
-                href={project.code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-                whileHover={{ scale: 1.05 }}
+            <motion.div className="project-content">
+              <motion.h3
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
               >
-                View Code
-              </motion.a>
-              <motion.a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-                whileHover={{ scale: 1.05 }}
+                {project.name}
+              </motion.h3>
+              
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
               >
-                Live Demo
-              </motion.a>
-            </div>
+                {project.description}
+              </motion.p>
+              
+              <motion.div 
+                className="project-buttons"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                <motion.a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                  whileHover={{ 
+                    scale: 1.05,
+                    boxShadow: "0 8px 25px rgba(0,123,255,0.3)"
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <i className="fab fa-github"></i> Code
+                </motion.a>
+                <motion.a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary"
+                  whileHover={{ 
+                    scale: 1.05,
+                    boxShadow: "0 8px 25px rgba(108,117,125,0.3)"
+                  }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <i className="fas fa-external-link-alt"></i> Demo
+                </motion.a>
+              </motion.div>
+            </motion.div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

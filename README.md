@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# 🚀 Anshu Mainali - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, professional portfolio website showcasing my journey as a Software Engineer with expertise in Salesforce, AI, and Full Stack Development.
 
-Currently, two official plugins are available:
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-18+-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue) ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Animations-purple)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Modern Design**: Clean, professional UI with smooth animations
+- **Responsive**: Optimized for desktop, tablet, and mobile devices
+- **Interactive Animations**: Powered by Framer Motion for engaging user experience
+- **Performance Optimized**: Fast loading with efficient code splitting
+- **Accessibility**: Built with accessibility best practices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18+ with TypeScript
+- **Styling**: CSS3 with modern features (Grid, Flexbox, Custom Properties)
+- **Animations**: Framer Motion
+- **Build Tool**: Vite
+- **Deployment**: Ready for Vercel/Netlify
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Sections
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Hero**: Introduction with animated text and call-to-actions
+- **Projects**: Featured projects with live demos and source code
+- **Skills**: Technical expertise organized by categories
+- **Achievements**: Certifications and professional accomplishments
+- **Contact**: Professional links and resume download
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Quick Start
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# Clone the repository
+git clone https://github.com/Anshu-Mainali-Giri/my-portfolio.git
+
+# Navigate to project directory
+cd my-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📱 Live Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Visit the live portfolio: [anshumainali.dev](https://your-portfolio-url.com)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎨 Key Highlights
+
+- **Interactive UI**: Hover effects, smooth transitions, and micro-interactions
+- **Modern Animations**: Staggered reveals, floating elements, and scroll-triggered animations
+- **Professional Design**: Glass morphism, gradients, and contemporary styling
+- **Mobile-First**: Responsive design that works on all devices
+
+## 📊 Projects Featured
+
+1. **Twitter Bot Detection** - ML-powered web app for detecting spam accounts
+2. **Online Store** - Full-featured e-commerce website with PHP backend
+3. **AgentHire** - Salesforce AgentForce automation for HR workflows
+
+## 🏆 Achievements
+
+- Salesforce AI Associate Certification
+- Google Cloud Computing Foundations (GCCF) Certification  
+- Salesforce Trailhead Agentblazer Innovator (100+ badges)
+
+## 📧 Contact
+
+- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **LinkedIn**: [Anshu Mainali](https://linkedin.com/in/your-profile)
+- **GitHub**: [Anshu-Mainali-Giri](https://github.com/Anshu-Mainali-Giri)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+⭐ **Star this repository if you found it helpful!**
