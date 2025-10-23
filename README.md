@@ -49,7 +49,7 @@ npm run build
 
 ## 📱 Live Demo
 
-Visit the live portfolio: [anshumainali.dev](https://your-portfolio-url.com)
+Visit the live portfolio: [anshumainali.dev](https://my-portfolio-lg0n.onrender.com)
 
 ## 🎨 Key Highlights
 
@@ -72,8 +72,8 @@ Visit the live portfolio: [anshumainali.dev](https://your-portfolio-url.com)
 
 ## 📧 Contact
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [Anshu Mainali](https://linkedin.com/in/your-profile)
+- **Email**: [anshumainaligiri@gmail.com](anshumainaligiri@gmail.com)
+- **LinkedIn**: [Anshu Mainali](https://www.linkedin.com/in/anshu-mainali-0069611a0/)
 - **GitHub**: [Anshu-Mainali-Giri](https://github.com/Anshu-Mainali-Giri)
 
 ## 📄 License
