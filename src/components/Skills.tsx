@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import "./style.css";
 
 const skillCategories = [
@@ -25,7 +25,7 @@ const skillCategories = [
 ];
 
 const Skills = () => {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -36,7 +36,7 @@ const Skills = () => {
     }
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { 
       opacity: 0, 
       y: 50,
@@ -53,7 +53,7 @@ const Skills = () => {
     }
   };
 
-  const skillVariants = {
+  const skillVariants: Variants = {
     hidden: { opacity: 0, scale: 0 },
     visible: {
       opacity: 1,
