@@ -18,7 +18,7 @@ const projects = [
   },
   {
     name: "Online Store",
-    description: "An online shopping website built using PHP backend, MySQL database, and featuring a sleek Bootstrap 5 frontend with custom animations and glassmorphism design elements..",
+    description: "An online shopping website built using PHP, MySQL and featuring a sleek Bootstrap 5 frontend with custom animations.",
     code: "https://github.com/Anshu-Mainali-Giri/Online-Store",
     demo: "https://elite-shop.infinityfree.me/Online-Store/",
     image: onlineStoreImg,

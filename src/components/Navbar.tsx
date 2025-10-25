@@ -27,7 +27,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400 }}
         >
-          <a href="#hero">AM</a>
+          <a href="#hero">&lt;Anshu/&gt;</a>
         </motion.div>
 
         {/* Center: Navigation Links */}
@@ -64,7 +64,7 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+            href="https://www.linkedin.com/in/anshu-mainali-0069611a0/"
             target="_blank"
             rel="noopener noreferrer"
             className="nav-social"

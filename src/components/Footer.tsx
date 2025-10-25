@@ -12,12 +12,12 @@ const Footer = () => {
     },
     { 
       name: "LinkedIn", 
-      url: "https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit", 
+      url: "https://www.linkedin.com/in/anshu-mainali-0069611a0/", 
       icon: "fab fa-linkedin" 
     },
     { 
       name: "Email", 
-      url: "mailto:anshu.mainali@example.com", 
+      url: "mailto:anshumainaligiri@gmail.com", 
       icon: "fas fa-envelope" 
     }
   ];
